@@ -22,3 +22,17 @@ Premier module stable de generation de recus de dons au format PDF pour Dolibarr
 
 ### Corrections
 - Génération du ZIP : suppression des anciens ZIPs avant recréation, lecture propre de VERSION avec `tr -d '[:space:]'` pour éviter les caractères résiduels dans le nom du fichier
+
+---
+
+## [0.1.2] — 2026-05-21
+
+### Corrections
+- README.md : compatibilité Dolibarr corrigée de 14+ à 21+
+
+---
+
+## [0.1.3] — 2026-05-21
+
+### Corrections
+- README.md : la version affichée est maintenant mise à jour à chaque changement de version
