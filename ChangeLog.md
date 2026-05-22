@@ -1,45 +1,21 @@
-# ChangeLog — RecuDons
+# ChangeLog — RecuDon
 
-## [0.1.4] — 2026-05-21
+## [1.0.0] — 2026-05-22
 
-### Corrections
-- ChangeLog.md : réorganisé de la version la plus récente à la plus ancienne
+### Version initiale stable
 
----
+Premier module stable de génération de reçus de dons au format PDF pour Dolibarr 21+.
 
-## [0.1.3] — 2026-05-21
-
-### Corrections
-- README.md : la version affichée est maintenant mise à jour à chaque changement de version
-
----
-
-## [0.1.2] — 2026-05-21
-
-### Corrections
-- README.md : compatibilité Dolibarr corrigée de 14+ à 21+
-
----
-
-## [0.1.1] — 2026-05-21
-
-### Corrections
-- Génération du ZIP : suppression des anciens ZIPs avant recréation, lecture propre de VERSION avec `tr -d '[:space:]'` pour éviter les caractères résiduels dans le nom du fichier
-
----
-
-## [0.1.0] — 2026-05-21
-
-### Version initiale
-
-Premier module stable de generation de recus de dons au format PDF pour Dolibarr 21+.
-
-**Fonctionnalites incluses :**
-- Modele PDF `pdf_recudon` integre dans le selecteur natif Dolibarr (section Documents de la fiche don)
-- En-tete : logo et coordonnees lus depuis *Configuration > Ma societe*
-- Bloc donateur avec resolution automatique : tiers lie (fk_soc) > champ societe > prenom/nom
-- Tableau de paiement : date, mode de reglement, montant en devise, reference du don
-- Bloc signature avec ville et nom du signataire configurables via constantes (`RECUDON_VILLE_SIGNATURE`, `RECUDON_PRESIDENT`)
+**Fonctionnalités incluses :**
+- Modèle PDF `pdf_recudon` intégré dans le sélecteur natif Dolibarr (section Documents de la fiche don)
+- Bouton **"Reçu PDF"** dans la barre d'actions de la fiche don (visible uniquement aux statuts "Promesse validée" et "Don payé")
+- En-tête : logo, coordonnées, SIRET et TVA lus depuis *Configuration > Ma société*
+- Bloc donateur avec résolution automatique : tiers lié (`fk_soc`) > champ societe > prénom/nom
+- Adresse et identifiants fiscaux (SIRET, TVA) du donateur lus depuis la fiche tiers si lié
+- Tableau de paiement : date, mode de règlement, montant en devise, référence du don
+- Bloc signature : ville et nom du signataire configurables via constantes (`RECUDON_VILLE_SIGNATURE`, `RECUDON_PRESIDENT`), nom/prénom/poste du gestionnaire connecté
+- Pied de page : version Dolibarr et version du module
 - Stockage du PDF dans `documents/don/<id>/` selon la convention Dolibarr
-- Support multi-entite Dolibarr
+- Support multi-entité Dolibarr
 - ID module : 250001
+- Compatibilité Dolibarr 21+ / PHP 7.4+

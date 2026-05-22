@@ -1,8 +1,8 @@
-# RecuDons — Module Dolibarr
+# RecuDon — Module Dolibarr
 
 **Editeur :** [BARNECKI SPIRITS](https://github.com/Barnecki)  
 **Depot :** [https://github.com/Barnecki/recudon](https://github.com/Barnecki/recudon)  
-**Version :** 0.1.4
+**Version :** 1.0.0
 **Compatibilite :** Dolibarr 21+  
 **Licence :** GPL v3
 
@@ -29,7 +29,7 @@ Le document reprend l'en-tete de la societe (logo, coordonnees), les information
 ## Installation
 
 1. Decompresser le ZIP dans `htdocs/custom/`
-2. Activer le module dans *Configuration > Modules > Finances > RecuDons*
+2. Activer le module dans *Configuration > Modules > Finances > RecuDon*
 3. Renseigner les constantes de signature (voir ci-dessous)
 
 ---
@@ -66,7 +66,7 @@ recudon/
 ├── VERSION                                    Version courante
 ├── modulebuilder.txt                          Marqueur ModuleBuilder Dolibarr
 ├── core/modules/
-│   ├── modRecuDons.class.php                  Descripteur du module
+│   ├── modRecuDon.class.php                  Descripteur du module
 │   └── dons/
 │       └── pdf_recudon.modules.php            Generateur PDF TCPDF
 └── langs/
