@@ -2,9 +2,17 @@
 
 **Editeur :** [BARNECKI SPIRITS](https://github.com/Barnecki)  
 **Depot :** [https://github.com/Barnecki/recudon](https://github.com/Barnecki/recudon)  
-**Version :** 1.0.0
+**Version :** 1.0.0  
 **Compatibilite :** Dolibarr 21+  
 **Licence :** GPL v3
+
+---
+
+## Prerequis
+
+- Dolibarr 21.0+
+- PHP 8.0+
+- Module **Don** natif activé
 
 ---
 
