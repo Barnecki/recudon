@@ -1,5 +1,25 @@
 # ChangeLog — RecuDon
 
+## [1.0.4] — 2026-08-22
+
+### Audit sécurité (aucune correction requise)
+- Audit complet du module contre le catalogue Dolibarr v21→v23.0.3 (skill `dolibarr-module-dev`) : appels shell, `$_GET`/`$_POST` direct, ancien style `->rights->`, `run_trigger()`, `dol_eval()`, path traversal `document.php`/`modulepart`, API REST custom, contrôle d'accès par page, IDOR sur la résolution du tiers lié
+- Recherche web complémentaire pour confirmer que le catalogue est à jour (aucun nouvel avis pertinent pour ce module)
+- **Résultat : aucune vulnérabilité identifiée, aucune correction nécessaire**
+- Section "Audit sécurité" ajoutée à `CLAUDE.md` pour tracer cette vérification
+
+---
+
+
+## [1.0.3] — 2026-08-22
+
+### Corrections (audit skill dolibarr-module-dev)
+- `actions_recudon.class.php` : `ActionsRecuDon` étend désormais `CommonHookActions` (convention du template officiel ModuleBuilder v23, `require_once DOL_DOCUMENT_ROOT.'/core/class/commonhookactions.class.php'`) — jusqu'ici la classe n'héritait de rien, fonctionnel mais non conforme au squelette officiel
+- Ajout de `COPYING` (licence GPL v3) à la racine du module — requis pour toute distribution (Dolistore/Dolimarketplace) selon `references/release_process.md` et `references/file_structure.md` du skill
+
+---
+
+
 ## [1.0.2] — 2026-05-24
 
 ### Corrections

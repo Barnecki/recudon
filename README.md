@@ -2,7 +2,7 @@
 
 **Editeur :** [BARNECKI SPIRITS](https://github.com/Barnecki)  
 **Depot :** [https://github.com/Barnecki/recudon](https://github.com/Barnecki/recudon)  
-**Version :** 1.0.2
+**Version :** 1.0.4
 **Compatibilite :** Dolibarr 21+  
 **Licence :** GPL v3
 
