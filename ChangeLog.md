@@ -1,5 +1,14 @@
 # ChangeLog — RecuDon
 
+## [1.0.5] — 2026-09-24
+
+### Corrections
+- `modRecuDon.class.php`, `pdf_recudon.modules.php` : remplacement de `strtoupper()` par `dol_strtoupper()` — wrapper Dolibarr gérant correctement les caractères accentués (pertinent pour le nom du donateur affiché en majuscules sur le reçu PDF)
+- Conversion complète de l'indentation espaces → tabulations sur les 4 fichiers PHP du module (`modRecuDon.class.php`, `pdf_recudon.modules.php`, `actions_recudon.class.php`, `generate_recu.php`), conformément à la convention confirmée par les skills officielles Dolibarr `skill-doli-dev`/`skill-doli-code-review` (embarquées depuis la 24.0.1), qui priment sur PSR-12 dans cet écosystème. Seule l'indentation en début de ligne est concernée — les espaces d'alignement mi-ligne et le contenu des chaînes de caractères sont inchangés.
+
+---
+
+
 ## [1.0.4] — 2026-08-22
 
 ### Audit sécurité (aucune correction requise)
